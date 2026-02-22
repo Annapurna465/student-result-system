@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Result</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+
+<div class="container mt-5">
+
+    <div class="card shadow p-4 text-center">
+
+        <h2 class="mb-4">Student Result</h2>
+
+        <p><b>Name:</b> {{name}}</p>
+        <p><b>Roll Number:</b> {{roll}}</p>
+        <p><b>Total Marks:</b> {{total}}</p>
+        <p><b>Percentage:</b> {{percent}}%</p>
+
+        <h4 class="mt-3">
+            Grade:
+            <span class="badge bg-success">{{grade}}</span>
+        </h4>
+        <a href="/download/{{roll}}" class="btn btn-danger mt-3">
+            Download PDF
+        </a>
+        <br>
+
+        <a href="/" class="btn btn-primary">Back to Home</a>
+        <a href="/students" class="btn btn-success">View All Students</a>
+
+    </div>
+
+</div>
+
+</body>
+</html>
